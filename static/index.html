@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompare: Groq vs DeepSeek</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Prompare</h1>
+    <p class="subtitle">Compare LLM responses, tokens, latency & emissions</p>
+
+    <textarea id="promptInput" placeholder="Enter your prompt..."></textarea>
+    <button id="compareBtn">Compare</button>
+
+    <div class="results">
+      <div class="card">
+        <h2>GROQ</h2>
+        <p id="groqResponse" class="output">–</p>
+        <div class="metrics">
+          <p><strong>Tokens:</strong> <span id="groqTokens">–</span></p>
+          <p><strong>Emissions:</strong> <span id="groqEmissions">–</span></p>
+          <p><strong>Latency:</strong> <span id="groqLatency">–</span></p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>DeepSeek</h2>
+        <p id="deepseekResponse" class="output">–</p>
+        <div class="metrics">
+          <p><strong>Tokens:</strong> <span id="deepseekTokens">–</span></p>
+          <p><strong>Emissions:</strong> <span id="deepseekEmissions">–</span></p>
+          <p><strong>Latency:</strong> <span id="deepseekLatency">–</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
